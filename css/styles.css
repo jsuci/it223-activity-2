@@ -1,11 +1,199 @@
 /* Global Styling */
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-video {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+header video {
+    width: 100%;
+    display: block;
+}
+
+/* Navigation Styles */
+nav {
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 14px 20px;
+    color: #000;
+}
+
+nav a:hover, nav a:focus {
+    color: #ff6f61;
+    background: rgb(230, 230, 230);
+}
+
+
+/* Cover Section Styles */
+section.cover {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+section.cover .cover-text {
+    position: relative;
+    padding: 30px;
+}
+
+section.cover img {
     width: 100%;
 }
+
+section.cover .cover-text h1 {
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 12px;
+}
+
+section.cover .cover-text p {
+    font-size: 16px;
+}
+
+/* Blogpost Section Styles */
+.blogpost h1 {
+    font-size: 30px;
+    font-weight: normal;
+    padding: 28px;
+    text-align: center;
+}
+
+.blogpost .post-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.blogpost .post-item {
+    /* background-color: #e7b2e34d; */
+    padding: 15px;
+    margin-bottom: 12px;
+    flex-basis: 420px;
+}
+
+.blogpost .post-item img {
+    margin-bottom: 15px;
+}
+
+.blogpost .post-item p.title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.blogpost .post-item p.desc {
+    margin-bottom: 15px;
+}
+
+.blogpost .post-item a {
+    display: block;
+    text-align: right;
+}
+
+
+.blogpost .post-item img {
+    width: 100%;
+}
+
+/* Call to Action Styles*/
+section.contact {
+    background-color: #2772d0;
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+section.contact p.contact-title {
+    font-size: 27px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+section.contact p.contact-desc {
+    color: rgb(233, 233, 233);
+    margin-bottom: 51px;
+}
+
+section.contact a {
+    background-color: #000;
+    color: #fff;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 24px 6px;
+    border-radius: 21px;
+}
+
+section.contact a:hover, a:focus {
+    background-color: #98dbc6;
+    color: #000;
+}
+
+/* Footer Styles */
+footer {
+    margin: 30px auto;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(131, 131, 131);
+}
+
+
+
+/* For Desktop Screens */
+@media screen and (min-width: 600px) {
+    /* Navigation */
+    nav {
+        flex-flow: row wrap;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+
+    /* Cover */
+    section.cover {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    section.cover .cover-text {
+        position: absolute;
+    }
+
+    section.cover .cover-text h1 {
+        font-size: 60px;
+        max-width: 420px;
+    }
+
+    /* Blog Posts */
+    .blogpost .post-container {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+
+    /* Contact */
+    section.contact {
+        background-color: #ff6f61;
+    }
+
+  }
