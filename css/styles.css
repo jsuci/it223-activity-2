@@ -48,7 +48,7 @@ section.cover {
 
 section.cover .cover-text {
     position: relative;
-    padding: 30px;
+    padding: 15px;
 }
 
 section.cover img {
@@ -92,7 +92,7 @@ section.cover .cover-text p {
 
 .blogpost .post-item p.title {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .blogpost .post-item p.desc {
